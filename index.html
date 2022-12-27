@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Encriptador-Desencriptador de textos!</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <img id="logo-alura" src="imagenes/logo_alura.png">
+        <textarea name="texto" autofocus id="ingresar-texto" placeholder="Ingrese el texto aquí"></textarea>
+        <div id="zona-mensaje">
+            <div id="ocultar">
+                <img src="imagenes/Muñeco.png">
+                <p id="negritas" >Ningún mensaje fue encontrado</p>
+                <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+            </div>
+            <p id="texto-nuevo" hidden></p>
+            <button id="boton-copiar" hidden>Copiar</button>
+        </div>
+        <div id="botones_y_texto">
+            <div id="aviso">
+                <img src="imagenes/important.png">
+                <span>Solo letras minúsculas y sin acentos.</span>
+                <br>
+            </div>
+
+            <button class="boton" id="encriptar">Encriptar</button>
+            <button class="boton" id="desencriptar">Desencriptar</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>Desarrollado por Daniel Caparroso Gutiérrez</p>
+        <a href="https://www.linkedin.com/in/daniel-capa"><img src="imagenes/logotipo-de-linkedin.png"></a>
+        <a href="https://github.com/Capa2124"><img src="imagenes/github.png"></a>
+    </footer>
+    <script type="text/javascript" src="script.js"></script>
+
+</body>
+
+</html>
