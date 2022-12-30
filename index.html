@@ -7,6 +7,7 @@ Subido github 26/Diciembre/2022-->
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
     <title>Encriptador-Desencriptador de textos!</title>
     <link rel="stylesheet" href="reset.css">
     <link rel="stylesheet" href="style.css">
@@ -14,26 +15,28 @@ Subido github 26/Diciembre/2022-->
 
 <body>
     <main>
-        <img id="logo-alura" src="imagenes/logo_alura.png">
-        <textarea name="texto" autofocus id="ingresar-texto" placeholder="Ingrese el texto aquí"></textarea>
-        <div id="zona-mensaje">
-            <div id="ocultar">
-                <img src="imagenes/Muñeco.png">
-                <p id="negritas" >Ningún mensaje fue encontrado</p>
-                <p>Ingresa el texto que desees encriptar o desencriptar.</p>
+        <div class="contenido">
+            <img id="logo-alura" src="imagenes/logo_alura.png">
+            <textarea name="texto" autofocus id="ingresar-texto" placeholder="Ingrese el texto aquí"></textarea>
+            <div id="botones-texto">
+                <div id="aviso">
+                    <img src="imagenes/important.png">
+                    <span>Solo letras minúsculas y sin acentos.</span>
+                    <br>
+                </div>
+    
+                <button class="boton" id="encriptar">Encriptar</button>
+                <button class="boton" id="desencriptar">Desencriptar</button>
             </div>
-            <p id="texto-nuevo" hidden></p>
-            <button id="boton-copiar" hidden>Copiar</button>
-        </div>
-        <div id="botones_y_texto">
-            <div id="aviso">
-                <img src="imagenes/important.png">
-                <span>Solo letras minúsculas y sin acentos.</span>
-                <br>
+            <div id="zona-mensaje">
+                <div id="ocultar">
+                    <img class="munieco" src="imagenes/Muñeco.png">
+                    <p class="parrafo-zona" id="negritas" >Ningún mensaje fue encontrado</p>
+                    <p class="parrafo-zona">Ingresa el texto que desees encriptar o desencriptar.</p>
+                </div>
+                <p id="texto-nuevo" hidden></p>
+                <button id="boton-copiar" hidden >Copiar</button>
             </div>
-
-            <button class="boton" id="encriptar">Encriptar</button>
-            <button class="boton" id="desencriptar">Desencriptar</button>
         </div>
     </main>
 
